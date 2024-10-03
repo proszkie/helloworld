@@ -1,0 +1,15 @@
+spring.application.name: helloworld
+
+
+
+management:
+  endpoint:
+    info:
+      enabled: true
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info, env
+      base-path: /
